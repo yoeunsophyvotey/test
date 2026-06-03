@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Eligible Pay Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Top bar */
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .topbar a {
+      color: #4f46e5;
+      text-decoration: none;
+    }
+
+    /* Center the form */
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 65px);
+    }
+
+    .box {
+      width: 350px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 24px;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 9px 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+
+    .password-label {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .password-label a {
+      font-size: 12px;
+      color: #4f46e5;
+      text-decoration: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 11px;
+      background: #4f46e5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .cancel {
+      display: block;
+      text-align: center;
+      margin-top: 12px;
+      color: #4f46e5;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <span class="logo">☑ ELIGIBLE | Pay</span>
+    <span>Don't have an account? <a href="#">Create Account</a></span>
+  </div>
+
+  <div class="center">
+    <div class="box">
+
+      <h2>Welcome Back</h2>
+
+      <label>Email Address</label>
+      <input type="email" placeholder="thomas@acme.com" />
+
+      <div class="password-label">
+        <label>Password</label>
+        <a href="#">Forgot?</a>
+      </div>
+      <input type="password" value="password123" />
+
+      <button>Login to Eligible Pay</button>
+
+      <a href="#" class="cancel">Cancel and return to website</a>
+
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+.navbar{
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px 0px 5px black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    align-items: center;
+    top: 0%;
+    position: fixed;
+    background-color: black; 
+}
+.logo{
+    display: flex;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    align-items: center;
+    gap: 9px;
+}
+.logo > p::first-letter{
+    font-size: 40px;
+    color: red;
+}
+.logo_img {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.logo_img > img{
+    width: 100%;   
+}
+.list{
+    display: flex;
+    color: white;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    gap: 15px;
+    list-style-type: none;
+}
+.check_cart{
+    color: red;
+}
+.item:hover{
+    color: red;
+    text-decoration: underline;
+}
+.slide{
+    width: 100%;
+    height: 400px;
+    box-shadow: 0px 0px 5px gray;
+    background-color: black;
+    margin-top: 90px;
+    overflow: hidden;
+}
+
+.header{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+    font-size: 50px;
+    color: blue;
+}
+.header::first-letter{
+    font-size: 70px;
+    color: red;
+}
+.slide > img{
+    width: 100%;
+}
+.product{
+    gap: 10px;
+    padding: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+}
+.cart{
+    width: 350px;
+    height: 530px;
+    box-shadow: 0px 0px 5px red;
+    border-radius: 15px;
+}
+.box_image{
+    width: 100%;
+    height: 50%;
+    background-color: blanchedalmond;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+}
+.box_image > img{
+    width: 100%;
+    object-fit: cover;
+}
+.title{
+    width: 90%;
+    height: 40%;
+    margin: auto;
+}
+.name{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+.star{
+    color: rgb(195, 208, 9);
+}
+.price{
+    font-size: 20px;
+}
+.price:hover{
+    color:red;
+}
+.btn{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

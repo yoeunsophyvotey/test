@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="/html/responsive/index.css">
+</head>
+<body>
+
+    <div class="container1">
+        
+        <div class="card1">
+            </div>
+
+        <div class="card1">
+            </div>
+
+        <div class="card1">
+            </div>
+
+        <div class="card1">
+            </div>
+
+        </div>
+
+</body>
+</html>
+
+<!-- 
+. display:grid = turn the div into grid(it just know it gonna turn into grid)
+. grid-auto-rows: 300px; = make the rows of the grid have 300px tall or width
+. padding is like this
+
+[ container (red/antiquewhite)          ]
+[   ___________   ___________           ]
+[  |           | |           |          ]
+[  |  card     | |  card     |  ←20px  ]
+[  |___________| |___________|          ]
+[                                       ]
+[  ↑ 20px space on all sides            ]
+
+.gap is the space between them 
+
+.   ROW 1 →  [ card ][ card ][ card ][ card ]
+    ROW 2 →  [ card ][ card ][ card ][ card ]
+    ROW 3 →  [ card ][ card ][ card ][ card ]
+
+              ↑col1   ↑col2   ↑col3   ↑col4
+
+Row = horizontal (left to right)
+Column = vertical (top to bottom)
+
+. By default display: grid with no grid-template-columns set will just make 1 column, so everything stacks top to bottom.
+. repeat(1, 1fr) means "make 1 column, and give it all the available space"
+-->

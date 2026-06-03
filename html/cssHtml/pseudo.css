@@ -1,0 +1,29 @@
+.test:hover{
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+}
+.test{
+    color: red;
+    font-size: 100px;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+p:active{
+    transform: scale(1.1);
+}
+p::first-letter{
+    color: green;
+    font-size: 200px;
+}
+input:focus{
+    border: 5px solid red;
+    background-color: lightblue;
+    box-shadow: 0 0 10px blue;
+}
+input:disabled{
+    background-color: lightgreen;
+    cursor: not-allowed;
+}
