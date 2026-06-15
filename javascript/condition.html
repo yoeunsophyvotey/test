@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let id, name, gender;
+        // let score1, score2, score3, score4, score5;
+        // let total_score, average, grade;
+        
+        // id=prompt("Enter ID = ");
+        // name=prompt("Enter name = ");
+        // gender=prompt("Enter gender = ");
+        // score1=parseFloat(prompt("Enter score1 = "));
+        // score2=parseFloat(prompt("Enter score2 = "));
+        // score3=parseFloat(prompt("Enter score2 = "));
+        // score4=parseFloat(prompt("Enter score4 = "));
+        // score5=parseFloat(prompt("Enter score5 = "));
+
+        // total_score=score1+score2+score3+score4+score5;
+        // average=total_score/5;
+
+        // if(average>=90 && average<=100){
+        //     grade="A"
+        // }else if(average>=80 && average<=90){
+        //     grade="B"
+        // }else if(average>=70 && average<=80){
+        //     grade="C"
+        // }else if(average>=60 && average<=70){
+        //     grade="D"
+        // }else if(average>=50 && average<=60){
+        //     grade="E"
+        // }else{
+        //     grade="F"
+        // }
+
+        // document.write("ID = "+id+"</br>");
+        // document.write("Name = "+name+"</br>");
+        // document.write("Gender = "+gender+"</br>");
+        // document.write("Total score = "+total_score+"</br>");
+        // document.write("Average = "+average+"</br>");
+        // document.write("Grade = "+grade+"</br>");
+
+
+        let code, name;
+        let qty, price,dis, total, payment;
+
+        code=prompt("Enter code = ");
+        name=prompt("Enter name = ");
+        qty=parseInt(prompt("Enter qty = "));
+        price=parseFloat(prompt("Enter price = "));
+
+        total=price*qty;
+        payment=total-(total*dis/100);
+
+        if(total>=1 && total<=10){
+            dis=10;
+            document.write("Discount 10%");
+        }else if(total>=10 && total<=20){
+
+        }else if(total>=60 && total<=70){
+        
+        }else{
+            
+        }
+    </script>
+</body>
+</html>

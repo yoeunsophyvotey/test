@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let num1, num2;
+
+        // num1=Number(prompt("Enter num1 = "));
+        // num2=Number(prompt("Enter num2 = "));
+
+        // document.write("num1 + num2 = "+(num1+num2)+"<br>");
+        // document.write("num1 + num2 = "+(num1+num2));
+
+    let num1, num2;
+    let id;
+    let name;
+    let price;
+    let qty, dis;
+    let total_price, payment;
+
+    id = prompt("Enter ID : ");
+    name = prompt("Enter name : ");
+    qty = Number(prompt("Enter qty : "));
+    price = Number(prompt("Enter price : "));
+
+    total_price = price*qty;
+    if(total_price >=1 && total_price <=10){
+        dis=10;
+    }else if(total_price >= 10 && total_price <=20){
+        dis=20;
+    }else if(total_price >= 20 && total_price <=30){
+        dis=30;
+    }else if(total_price >= 30 && total_price <= 40){
+        dis=40;
+    }else{
+        dis=50;
+    }
+
+    document.write("=======RECEIPT======="+"<br>");
+    document.write("ID : "+id+"<br>");
+    document.write("Name : "+name+"<br>");
+    document.write("Price : "+price+"<br>");
+    document.write("Qty : "+qty+"<br>");
+    document.write("Discount : "+dis+"<br>");
+    document.write("Total Price : "+total_price+"<br>");
+
+    payment = total_price -(total_price*dis)/100;
+    document.write("Payment : "+payment+"<br>");
+    </script>
+</body>
+</html>
+
+
