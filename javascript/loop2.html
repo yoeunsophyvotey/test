@@ -26,9 +26,10 @@
             <label class="fs-5 fw-bold">Javascript score</label><br>
             <input type="text" id="score4" class="fs-4 w-50 rounded-3 mb-3"><br>
 
-            <button type="button" onclick="Score()" class="fs-4 rounded-5 fw-bold text-white bg-danger">Submit</button>
-            <button type="reset" class="fs-4 rounded-5 fw-bold text-white bg-danger">Reset</button>
-
+           <div>
+                <button type="button" onclick="Score()" class="fs-4 rounded-5 fw-bold text-white bg-danger">Submit</button>
+                <button type="reset" class="fs-4 rounded-5 fw-bold text-white bg-danger">Reset</button>
+           </div>
         </form>
         <table class="table table-striped">
             <tr class="fs-4">
@@ -50,12 +51,12 @@
     <script>
         function Score(){
             let name = document.getElementById("name").value;
-            let score1 = document.getElementById("score1").value;
-            let score2 = document.getElementById("score2").value;
-            let score3 = document.getElementById("score3").value;
-            let score4 = document.getElementById("score4").value;
+            let score1 = Number(document.getElementById("score1").value);
+            let score2 = Number(document.getElementById("score2").value);
+            let score3 = Number(document.getElementById("score3").value);
+            let score4 = Number(document.getElementById("score4").value);
 
-            let total = score1+score2+score+score4;
+            let total = score1 + score2 + score3 + score4;
             let average = total/4;
             let grade;
 

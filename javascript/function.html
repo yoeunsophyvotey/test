@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container p-3">
+        <form class="p-5 m-auto shadow ">
+        <h1>Create your product</h1>
+        <label for="" class="text-black fs-5">Name of product</label><br>
+        <input type="text" name="" id="name" class="p-3 fs-4 rounded-4 w-50 mb-3" ><br>
+
+        <label for="" class="text-black fs-5">Price of product</label><br>
+        <input type="text" name="" id="price" class="p-3 fs-4 rounded-4 w-50 mb-3" ><br>
+
+        <label for="" class="text-black fs-5">Category of product</label><br>
+        <input type="text" name="" id="category" class="p-3 fs-4 rounded-4 w-50 mb-3" ><br>
+
+        <label for="" class="text-black fs-5">Image of product</label><br>
+        <input type="text" name="" id="img" class="p-3 fs-4 rounded-4 w-50 mb-3" ><br>
+
+        <button type="button" onclick="Product()" class="btn bg-danger text-white p-3">Submit</button>
+        </form>
+
+        <div class="container">
+            <div class="row">
+                <div>
+
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-striped">
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+            </tr>
+            <tbody id="Show">
+
+            </tbody>
+        </table>
+        
+    </div>
+
+    
+
+    
+
+    
+
+    <script>
+        function Product(){
+            let url = document.getElementById("img").value;
+            let name = document.getElementById("name").value;
+            let category = document.getElementById("category").value;
+            let price = document.getElementById("price").value;
+
+            document.getElementById("Show").innerHTML += `
+            <tr>
+                <td><img src="${url}" width="150" height="150" style="object-fit:cover;"></td>
+                <td>${name}</td>
+                <td>${category}</td>
+                <td>${price}</td>
+            </tr>
+            `;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

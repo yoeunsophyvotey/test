@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container p-3 ">
+        <form class="p-5 m-auto shadow">
+            <h1 class="fw-bold">Employee</h1>
+
+            <label class="fs-5 fw-bold">ID: </label><br>
+            <input type="text" id="emID" class="fs-4 w-50 rounded-3 mb-3"><br>
+
+            <label class="fs-5 fw-bold">Name: </label><br>
+            <input type="text" id="emName" class="fs-4 w-50 rounded-3 mb-3"><br>
+
+            <label class="fs-5 fw-bold">Gender: </label><br>
+            <input type="text" id="emGender" class="fs-4 w-50 rounded-3 mb-3"><br>
+
+            <label class="fs-5 fw-bold">Rate: </label><br>
+            <input type="text" id="emRate" class="fs-4 w-50 rounded-3 mb-3"><br>
+
+            <label class="fs-5 fw-bold">Hour: </label><br>
+            <input type="text" id="emHour" class="fs-4 w-50 rounded-3 mb-3"><br>
+
+            <div>
+                <button type="button" onclick="Salary()" class="fs-4 rounded-5 fw-bold bg-primary btn-lg px-5 rounded-pill">Submit</button>
+            </div>
+        </form>
+        <table class="table table-striped">
+            <tr class="fs-4">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Rate</th>
+                <th>Hour</th>
+                <th>Salary</th>
+            </tr> 
+            <tbody id="result">
+
+            </tbody>
+        </table>
+    </div>
+    <script>
+        function Salary(){
+            let emID = document.getElementById("emID").value;
+            let emName = document.getElementById("emName").value;
+            let emGender = document.getElementById("emGender").value;
+            let emRate = Number(document.getElementById("emRate").value);
+            let emHour = Number(document.getElementById("emHour").value);
+
+            let emSalary = emRate * emHour;
+
+            document.getElementById("result").innerHTML += `
+            <tr>
+                <td>${emID}</td>   
+                <td>${emName}</td>   
+                <td>${emGender}</td>  
+                <td>${emRate}</td>  
+                <td>${emHour}</td>  
+                <td>${emSalary}</td>  
+            </tr>
+
+            `
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
